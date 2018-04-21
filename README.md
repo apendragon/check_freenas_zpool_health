@@ -8,41 +8,41 @@ Tested with FreeNAS-11.1-U2, icinga 2.8.2, icingaweb 2.5.1, perl 5.26.1, Monitor
 
 ## Usage
 
-Usage: check_freenas_zpool_health -H <host> -C <community> -z <zpool> -w <warning> -c <critical> -t <timeout> [-U <secname> -A <authpassword> -X <privpasswd> -a <authproto> -x <privproto>]
-
- -?, --usage
-   Print usage information
- -h, --help
-   Print detailed help screen
- -V, --version
-   Print version information
- --extra-opts=[section][@file]
-   Read options from an ini file. See https://www.monitoring-plugins.org/doc/extra-opts.html
-   for usage and examples.
- -c, --critical=INTEGER
-   Exit with CRITICAL status if type equal INTEGER [0..5]
- -C, --community=STRING
-   SNMP community
- -H, --hostname=STRING
-   Hostname to query - required
- -w, --warning=INTEGER
-   Exit with WARNING status if equal INTEGER [0..5]
- -z, --zpool=STRING
-   zpool name
- -U, --secname=STRING
-   SNMPv3 username
- -A, --authpassword=STRING
-   SNMPv3 authentication password
- -X, --privpasswd=STRING
-   SNMPv3 privacy password (passphrase)
- -a, --authproto=STRING
-   SNMPv3 authentication proto [MD5|SHA]
- -x, --privproto=STRING
-   SNMPv3 privacy protocol [AES|DES]
- -t, --timeout=INTEGER
-   Seconds before plugin times out (default: 15)
- -v, --verbose
-   Show details for command-line debugging (can repeat up to 3 times)
+        Usage: check_freenas_zpool_health -H <host> -C <community> -z <zpool> -w <warning> -c <critical> -t <timeout> [-U <secname> -A <authpassword> -X <privpasswd> -a <authproto> -x <privproto>]
+        
+         -?, --usage
+           Print usage information
+         -h, --help
+           Print detailed help screen
+         -V, --version
+           Print version information
+         --extra-opts=[section][@file]
+           Read options from an ini file. See https://www.monitoring-plugins.org/doc/extra-opts.html
+           for usage and examples.
+         -c, --critical=INTEGER
+           Exit with CRITICAL status if type equal INTEGER [0..5]
+         -C, --community=STRING
+           SNMP community
+         -H, --hostname=STRING
+           Hostname to query - required
+         -w, --warning=INTEGER
+           Exit with WARNING status if equal INTEGER [0..5]
+         -z, --zpool=STRING
+           zpool name
+         -U, --secname=STRING
+           SNMPv3 username
+         -A, --authpassword=STRING
+           SNMPv3 authentication password
+         -X, --privpasswd=STRING
+           SNMPv3 privacy password (passphrase)
+         -a, --authproto=STRING
+           SNMPv3 authentication proto [MD5|SHA]
+         -x, --privproto=STRING
+           SNMPv3 privacy protocol [AES|DES]
+         -t, --timeout=INTEGER
+           Seconds before plugin times out (default: 15)
+         -v, --verbose
+           Show details for command-line debugging (can repeat up to 3 times)
 
 ## Notes:
   To use 'AES' SNMPv3 privacy protocol Crypt/Rijndae perlmod installation is
@@ -80,6 +80,7 @@ Usage: check_freenas_zpool_health -H <host> -C <community> -z <zpool> -w <warnin
 
 ## Debugging:
   -vv option will display the executed method while running the plugin
+
   -vvv option will also display all the SNMP dialog managed by Net::SNMP
 
 ## LICENSE AND COPYRIGHT
